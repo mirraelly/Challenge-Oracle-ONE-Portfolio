@@ -310,12 +310,32 @@
                             rápido
                             possível.</p>
                         <form class="form-contato-form">
-                            <input class="form-contato-input" type="text" id="nome" placeholder="Nome">
-                            <input class="form-contato-input" type="email" id="email" placeholder="Email">
-                            <input class="form-contato-input" type="text" id="assunto" placeholder="Assunto">
-                            <textarea class="form-contato-textarea" rows="5" cols="40" id="mensagem" name="mensagem"
-                                placeholder="Sua mensagem"></textarea>
-                            <button class="form-contato-botao">Enviar mensagem</button>
+                            <div>
+                                <input class="form-contato-input input" type="text" id="nome"
+                                    placeholder="Nome completo" minlength="10" maxlength="50" required>
+                                <span class="alerta" aria-hidden="true" role="alert" id="erroNome">* Nome deve ter no mínimo 10
+                                    caracteres!</span>
+                            </div>
+                            <div>
+                                <input class="form-contato-input input" type="email" id="email" placeholder="Email"
+                                    required>
+                                <span class="alerta" aria-hidden="true" role="alert" id="erroEmail">* Digite um e-mail válido!</span>
+                            </div>
+                            <div>
+                                <input class="form-contato-input textarea" type="text" id="assunto"
+                                    placeholder="Assunto" minlength="5"  maxlength="50" required>
+                                <span class="alerta" aria-hidden="true" role="alert" id="erroAssunto">* Por favor, escrever o motivo do seu
+                                    contato!</span>
+                            </div>
+                            <div>
+                                <textarea class="form-contato-textarea textarea" rows="5" cols="40" id="mensagem"
+                                    name="mensagem" placeholder="Sua mensagem"  maxlength="300" required></textarea>
+                                <span class="alerta" aria-hidden="true" role="alert" id="erroMens">* Por favor, detalhe o motivo do seu
+                                    contato.</span>
+                            </div>
+                            <div>
+                                <button class="form-contato-botao" type="submit">Enviar mensagem</button>
+                            </div>
                         </form>
                     </div>
                 </div>

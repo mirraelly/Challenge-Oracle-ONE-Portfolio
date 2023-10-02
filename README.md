@@ -1,8 +1,4 @@
-# Chanllenge-Oracle-ONE-portifolio
-
-## Desafio do Challenge Front End: 
-### Nessa sprint trabalhamos na construção de um portfólio.
-
+# Challenge-Oracle-ONE-portifolio
 ## Deploy: 
 
 ## Requisitos:
