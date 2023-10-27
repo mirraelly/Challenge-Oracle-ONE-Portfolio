@@ -12,51 +12,77 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
 
-    <script src="./script.js" defer></script>
+    <script src="./js/formularios.js" defer></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js" defer></script>
+    <script src="https://cdn.rawgit.com/fulton-digital/jquery-starfield/master/dist/jquery-starfield.min.js"
+        defer></script>
+    <script src="./js/index-animacao.js" defer></script>
+
 </head>
 
 <body>
     <div class="tudo">
 
         <header>
-            <section>
-                <img src="./images/logo-perfil.png"
-                    alt="Logo com dois'Ms' dourados, representando as iniciais do nome e sobrenome. ">
-                <h1>Mirraely Moura</h1>
-            </section>
+            <a href="#inicial">
+                <section class="campo-logo">
+
+                    <img src="./images/logo-perfil.png"
+                        alt="Logo com dois'Ms' dourados, representando as iniciais do nome e sobrenome. ">
+                    <h1>Mirraely Moura</h1>
+
+                </section>
+            </a>
             <nav class="menu-nav">
                 <ul>
-                    <li><a href="#sobremim">Sobre mim</a></li>
+                    <li><a href="#Inicial">Home</a></li>
+                    <li><a href="#sobre-mim">Sobre</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#hobbies">Hobbies</a></li>
-                    <li><a href="#formacao">Formações e Cursos</a></li>
-                    <li><a href="#experiencia">Experiência</a></li>
-                    <li><a href="#contato" id="contato">Fale Comigo</a></li>
+                    <li><a href="#formacao">Cursos</a></li>
+                    <li><a href="#experiencia">Projetos</a></li>
+                    <li><a href="#contato" id="contatos">Contato</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section class="inicial">
-                <div class="titulo-container" id="#sobremim">
-                    <h2 class="titulo-bio1">Olá, meu nome é Mirraely Moura e construo sistemas web</h2>
-                    <p class="titulo-bio2">Eu sou uma desenvolvedora de software apaixonada por inovação e
-                        tecnologia, também venho esturando alguns assuntos relacionados, como Design UX,
-                        e estou participando no projeto Oracle ONE na Alura.</p>
-                    <ul class="titulo-network">
-                        <li class="network"><a href="https://github.com/mirraelly" target="_blank">Github <img
-                                    src="./images/seta.png"> </a></li>
-                        <li class="network"><a href="https://www.linkedin.com/in/mirraely/" target="_blank">Linkedin
-                                <img src="./images/seta.png"></a></li>
-                        <li class="network"><a href="https://www.instagram.com/mirraely__/" target="_blank">Instagram
-                                <img src="./images/seta.png"></a></li>
-                        <li class="network"><a href="#">Curriculo <img src="./images/seta.png"></a></li>
-                    </ul>
-                </div>
-                <img class="foto-perfil" src="./images/foto-perfil.jpeg">
+            <section class="conteiner-inicial" id="inicial">
+
+                <article class="titulo-container inicial" id="#sobremim">
+                    <div>
+                        <div class="box-titulo">
+                            <!-- <h2 class="titulo-bio1">
+                        <span id="titulo-animacao"></span>
+                    </h2> -->
+                            <h3 class="titulo-bio1 primeiro-titulo">Olá, meu nome é <span class="meu-nome">Mirraely
+                                    Moura</span></h3>
+                            <h3 class="titulo-bio1 segundo-titulo">Sou <span class="skill-desenvolvedor">Desenvolvedora
+                                    Frontend</span>
+                            </h3>
+                        </div>
+                        <p class="titulo-bio2">Eu sou uma desenvolvedora de software apaixonada por inovação e
+                            tecnologia, também venho estudando alguns assuntos relacionados, como Design UX,
+                            e estou participando no projeto Oracle ONE na Alura.</p>
+                        <ul class="titulo-network">
+                            <li class="network"><a href="https://github.com/mirraelly" target="_blank">Github &#129125;
+                                </a></li>
+                            <li class="network"><a href="https://www.linkedin.com/in/mirraely/" target="_blank">Linkedin
+                                    &#129125; </a></li>
+                            <li class="network"><a href="https://www.instagram.com/mirraely__/"
+                                    target="_blank">Instagram
+                                    &#129125;</a></li>
+                            <li class="network"><a href="#">Curriculo &#129125;</a></li>
+                        </ul>
+                    </div>
+                    <div class="conteiner-foto-perfil">
+                        <img class="foto-perfil" src="./images/foto-perfil.jpeg">
+                    </div>
+                </article>
             </section>
 
-            <section class="sobre-mim">
+            <section class="sobre-mim" id="sobre-mim">
                 <div class="sobre-mim-container">
                     <h3 class="sobre-mim-titulo">Sobre mim</h3>
                     <p class="sobre-mim-p">Olá! Boas vindas! </p>
@@ -68,25 +94,37 @@
                         cursos em Tech e Design de UX e, com isso, me encantei ainda mais pela tecnologia, tanto que
                         decidi
                         fazer transição de carreira. </p>
-                    <p class="sobre-mim-p" id="sobre">"Sou bastante analítica e curiosa, prezo pelo trabalho em equipe,
+                    <p class="sobre-mim-p" id="sobre">"Sou bastante analítica e curiosa, prezo pelo trabalho em
+                        equipe,
                         amo
                         músicas e
                         livros e gosto de desafios."</p>
-                    <p class="sobre-mim-p">Combinando essa mentalidade com meu desejo de aprender e crescer na área da
+                    <p class="sobre-mim-p">Combinando essa mentalidade com meu desejo de aprender e crescer na área
+                        da
                         tecnologia,
                         estou bem comprometida em aprimorar minhas habilidades de desenvolvimento de software,
                         adquirindo
                         conhecimento
-                        em linguagens de programação, além de frameworks populares, como React e Node.js. Atualmente,
+                        em linguagens de programação, além de frameworks populares, como React e Node.js.
+                        Atualmente,
                         estou
-                        buscando oportunidades que me permitam expandir meu conjunto de habilidades e ganhar experiência
+                        buscando oportunidades que me permitam expandir meu conjunto de habilidades e ganhar
+                        experiência
                         prática. Se você está procurando uma profissional apaixonada e curiosa, com uma perspectiva
                         multidisciplinar e
-                        disposta a enfrentar novos desafios, estou ansiosa para colaborar e contribuir em projetos.</p>
+                        disposta a enfrentar novos desafios, estou ansiosa para colaborar e contribuir em projetos.
+                    </p>
+                    <img src="./images/assinatura-digital.png" alt="Minha assinatura digital" id="assinatura">
+                </div>
+
+                <div class="conteiner-estrelas">
+                    <div class="estrela-a">
+                        <div class="estrela-b"></div>
+                    </div>
                 </div>
             </section>
 
-            <section class="skills">
+            <section class="skills-section" id="skills">
                 <h3 class="skills-titulo">Skills</h3>
                 <div class="skills-linha">
 
@@ -116,6 +154,12 @@
                     </div>
                     <div class="skills-conteiner">
                         <ul>
+                            <li class="skills-img"><img src="./images/skill-nodejs.png" alt=""></li>
+                            <li class="kills-nome">Node JS</li>
+                        </ul>
+                    </div>
+                    <div class="skills-conteiner">
+                        <ul>
                             <li class="skills-img" id="typescript"> <img src="./images/skill-typescript.svg" alt="">
                             </li>
                             <li class="skills-nome">Typescript</li>
@@ -124,59 +168,108 @@
                     <div class="skills-conteiner">
                         <ul>
                             <li class="skills-img"><img src="./images/skill-nodejs.png" alt=""></li>
-                            <li class="kills-nome">Node JS</li>
+                            <li class="kills-nome">Python</li>
+                        </ul>
+                    </div>
+                    <div class="skills-conteiner">
+                        <ul>
+                            <li class="skills-img"><img src="./images/skill-nodejs.png" alt=""></li>
+                            <li class="kills-nome">PostgreSQL</li>
+                        </ul>
+                    </div>
+                    <div class="skills-conteiner">
+                        <ul>
+                            <li class="skills-img"><img src="./images/skill-nodejs.png" alt=""></li>
+                            <li class="kills-nome">Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="skills-conteiner">
+                        <ul>
+                            <li class="skills-img"><img src="./images/skill-nodejs.png" alt=""></li>
+                            <li class="kills-nome">React Native</li>
                         </ul>
                     </div>
 
                 </div>
             </section>
 
-            <section class="hobbies">
+            <section class="hobbies" id="hobbies">
                 <h3 class="hobbies-titulo">Hobbies</h3>
-                <div class="hobbies-linha">
+                <article class="hobbies-box">
+                    <div class="hobbies-linha">
+                        <div class="hobbies-conteiner">
+                            <ul>
+                                <li class="hobbies-img"><img src="./images/h-livro.png" alt="Ícone de livro"></li>
+                                <li class="hobbies_-nome">Ler livros</li>
+                            </ul>
+                        </div>
+                        <div class="hobbies-conteiner">
+                            <ul>
+                                <li class="hobbies-img"> <img src="./images/h-musicas.png" alt="Ícone de música"></li>
+                                <li class="hobbies-nome">Ouvir música</li>
+                            </ul>
+                        </div>
+                        <div class="hobbies-conteiner">
+                            <ul>
+                                <li class="hobbies-img"><img src="./images/h-videos.png" alt="Ícone de TV"></li>
+                                <li class="hobbies-nome">Assistir séries</li>
+                            </ul>
+                        </div>
+                        <div class="hobbies-conteiner">
+                            <ul>
+                                <li class="hobbies-img"> <img src="./images/h-fotos.png"
+                                        alt="Ícone de câmera fotográfica"> </li>
+                                <li class="hobbies-nome">Tirar fotos</li>
+                            </ul>
+                        </div>
+                        <div class="hobbies-conteiner">
+                            <ul>
+                                <li class="hobbies-img"> <img src="./images/h-receitas.png" alt="Ícone de comida"> </li>
+                                <li class="hobbies-nome">Testar receitas</li>
+                            </ul>
+                        </div>
+                        <div class="hobbies-conteiner">
+                            <ul>
+                                <li class="hobbies-img"> <img src="./images/h-receitas.png" alt="Ícone de passeios">
+                                </li>
+                                <li class="hobbies-nome">Passear</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- <div class="Cards para colocar em cada item após animação">
 
-                    <div class="hobbies-conteiner">
-                        <ul>
-                            <li class="hobbies-img"><img src="./images/h-livro.png"></li>
-                            <li class="hobbies_-nome">Ler livros</li>
-                        </ul>
-                    </div>
-                    <div class="hobbies-conteiner">
-                        <ul>
-                            <li class="hobbies-img"> <img src="./images/h-musicas.png" alt=""></li>
-                            <li class="hobbies-nome">Ouvir música</li>
-                        </ul>
-                    </div>
-                    <div class="hobbies-conteiner">
-                        <ul>
-                            <li class="hobbies-img"><img src="./images/h-videos.png" alt=""></li>
-                            <li class="hobbies-nome">Assistir séries</li>
-                        </ul>
-                    </div>
-                    <div class="hobbies-conteiner">
-                        <ul>
-                            <li class="hobbies-img"> <img src="./images/h-fotos.png" alt=""> </li>
-                            <li class="hobbies-nome">Tirar fotos</li>
-                        </ul>
-                    </div>
-                    <div class="hobbies-conteiner">
-                        <ul>
-                            <li class="hobbies-img"> <img src="./images/h-receitas.png" alt=""> </li>
-                            <li class="hobbies-nome">Testar receitas</li>
-                        </ul>
-                    </div>
-
-                </div>
+                        Tenho uma paixão por diversas atividades que alimentam minha curiosidade e criatividade. A
+                        leitura de livros me permite explorar mundos e ideias fascinantes, enquanto a música acalma
+                        minha mente e me inspira. Assistir a séries me ensina sobre narrativa e desenvolvimento de
+                        personagens, e a fotografia captura momentos preciosos que enriquecem meu olhar para o mundo.
+                        Além disso, meu interesse em testar receitas reflete meu gosto por desafios e minha capacidade
+                        de experimentar novas abordagens. Esses hobbies demonstram minha busca constante por
+                        conhecimento e minha habilidade de abraçar oportunidades criativas, características que trago
+                        para qualquer desafio profissional.
+                    </div> -->
+                    <figure class="imagem-hobbies">
+                        <img src="./images/quadrinhos.png" alt="Quadrinhos representando os hobbies"
+                            class="img-quadrinhos-hobbies">
+                        <figcaption class="hobbies-texto-quadrinhos">
+                            <p> Em particular, adoro a gamificação em várias esferas da minha vida. 
+                                Ela é a forma pela qual coloco minhas ideias em ação,
+                                usando a tecnologia para transformá-las em experiências lúdicas, envolventes e inovadoras.
+                                Em resumo, tenho paixão por diversas atividades que alimentam minha curiosidade e
+                                criatividade.</p>
+                        </figcaption>
+                    </figure>
+                </article>
             </section>
 
-            <section class="academico">
-                <h3 class="academico-titulo" id="formacao">Formação acadêmica</h3>
+            <section class="academico-section" id="formacao">
+                <h3 class="academico-titulo" >Formação acadêmica</h3>
                 <div class="academico-cursos">
                     <div class="academico-cursos-conteiner">
                         <ul class="academico-cursos-lista">
                             <li class="academico-cursos-item-img"><img src="./images/acad-ifrn.jpg"></li>
                             <li class="academico-cursos-item-titulo">
-                                <h4>Técnico ao Integrado ao Ensino Médio em Guia de Turismo</h4>
+                                <h4>Técnico em <br>
+                                    Guia de Turismo</h4>
                             </li>
                             <li class="academico-cursos-item-subtititulo">
                                 <p>2007 a 2010 - IFRN</p>
@@ -187,10 +280,11 @@
                         <ul class="academico-cursos-lista">
                             <li class="academico-cursos-item-img"><img src="./images/acad-UNP.webp"></li>
                             <li class="academico-cursos-item-titulo">
-                                <h4>Bacharel em Direito</h4>
+                                <h4>Bacharel <br>
+                                    em Direito</h4>
                             </li>
                             <li class="academico-cursos-item-subtititulo">
-                                <p>2011 a 2015 - UNP</p>
+                                <p>2011 a 2015</p>
                             </li>
                         </ul>
                     </div>
@@ -198,20 +292,20 @@
                         <ul class="academico-cursos-lista">
                             <li class="academico-cursos-item-img"><img src="./images/acad-imd.png"></li>
                             <li class="academico-cursos-item-titulo">
-                                <h4>Técnico em Informática para Internet</h4>
+                                <h4>Técnico em <br>
+                                    Informática para Internet</h4>
                             </li>
                             <li class="academico-cursos-item-subtititulo">
-                                <p>Em andamento - IMD/UFRN</p>
+                                <p>Em andamento</p>
                             </li>
                         </ul>
                     </div>
-                </div>
-                <div class="academico-cursos">
                     <div class="academico-cursos-conteiner">
                         <ul class="academico-cursos-lista">
                             <li class="academico-cursos-item-img"><img src="./images/acad-educacao-one.png"></li>
                             <li class="academico-cursos-item-titulo">
-                                <h4>Formação em Front-End</h4>
+                                <h4>Formação em <br>
+                                    Front-End</h4>
                             </li>
                             <li class="academico-cursos-item-subtititulo">
                                 <p>Em andamento - Alura</p>
@@ -222,10 +316,11 @@
                         <ul class="academico-cursos-lista">
                             <li class="academico-cursos-item-img"><img src="./images/acad-proz.png"></li>
                             <li class="academico-cursos-item-titulo">
-                                <h4>Formação em Front-End</h4>
+                                <h4>Formação em <br>
+                                    Front-End</h4>
                             </li>
                             <li class="academico-cursos-item-subtititulo">
-                                <p>2023 - Proz Educação/ Parceria: AWS e Meta</p>
+                                <p>2023 - AWS e Meta</p>
                             </li>
                         </ul>
                     </div>
@@ -233,21 +328,23 @@
                         <ul class="academico-cursos-lista">
                             <li class="academico-cursos-item-img"><img src="./images/acad-Descomplica.webp"></li>
                             <li class="academico-cursos-item-titulo">
-                                <h4>FundamentosFront-End</h4>
+                                <h4>Fundamentos em <br>
+                                    Front-End</h4>
                             </li>
                             <li class="academico-cursos-item-subtititulo">
-                                <p>2023 - Descomplica /Instituto Nubank</p>
+                                <p>2023 - Instituto Nubank</p>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <section class="experiencia">
-                <h3 class="experiencia-section-titulo" id="experiencia">Experiência Profissional</h3>
+            <section class="experiencia" id="experiencia">
+                <h3 class="experiencia-section-titulo">Experiência Profissional</h3>
                 <section class="experiencia-principal">
                     <div class="experiencia-conteiner">
                         <div class="experiencia-informacao">
+                            
                             <h4 class="experiencia-titulo">Decodificador de texto </h4>
                             <p class="experiencia-texto">Challenge Alura Codificador, utilizando HTML, CSS e Javascript
                                 (sem frameworks).</p>
@@ -260,7 +357,9 @@
                                             class="experiencia-botao-demo">Demo</button></a></span>
                             </div>
                         </div>
+                        <figure>
                         <img class="experiencia-img" src="./images/exp-decodificador-alura.png">
+                    </figure>
                     </div>
                     <div class="experiencia-conteiner">
                         <div class="experiencia-informacao">
@@ -298,8 +397,8 @@
                 </section>
             </section>
 
-            <section class="form-contato">
-                <div id="contato" class="form-contato-contato">
+            <section class="form-contato-section" id="contato">
+                <div class="form-contato-contato">
                     <div class="form-contato-esquerda">
                         <img class="form-contato-img" src="./images/contato.png">
                     </div>
@@ -313,24 +412,28 @@
                             <div>
                                 <input class="form-contato-input input" type="text" id="nome"
                                     placeholder="Nome completo" minlength="10" maxlength="50" required>
-                                <span class="alerta" aria-hidden="true" role="alert" id="erroNome">* Nome deve ter no mínimo 10
+                                <span class="alerta" aria-hidden="true" role="alert" id="erroNome">* Nome deve ter no
+                                    mínimo 10
                                     caracteres!</span>
                             </div>
                             <div>
                                 <input class="form-contato-input input" type="email" id="email" placeholder="Email"
                                     required>
-                                <span class="alerta" aria-hidden="true" role="alert" id="erroEmail">* Digite um e-mail válido!</span>
+                                <span class="alerta" aria-hidden="true" role="alert" id="erroEmail">* Digite um e-mail
+                                    válido!</span>
                             </div>
                             <div>
                                 <input class="form-contato-input textarea" type="text" id="assunto"
-                                    placeholder="Assunto" minlength="5"  maxlength="50" required>
-                                <span class="alerta" aria-hidden="true" role="alert" id="erroAssunto">* Por favor, escrever o motivo do seu
+                                    placeholder="Assunto" minlength="5" maxlength="50" required>
+                                <span class="alerta" aria-hidden="true" role="alert" id="erroAssunto">* Por favor,
+                                    escrever o motivo do seu
                                     contato!</span>
                             </div>
                             <div>
                                 <textarea class="form-contato-textarea textarea" rows="5" cols="40" id="mensagem"
-                                    name="mensagem" placeholder="Sua mensagem"  maxlength="300" required></textarea>
-                                <span class="alerta" aria-hidden="true" role="alert" id="erroMens">* Por favor, detalhe o motivo do seu
+                                    name="mensagem" placeholder="Sua mensagem" maxlength="300" required></textarea>
+                                <span class="alerta" aria-hidden="true" role="alert" id="erroMens">* Por favor, detalhe
+                                    o motivo do seu
                                     contato.</span>
                             </div>
                             <div>
@@ -341,13 +444,11 @@
                 </div>
             </section>
         </main>
-
-        <footer class="rodape">
-            <p>Desenvolvido por Mirraely</p>
-            <p>2023</p>
-        </footer>
-
     </div>
+    <footer class="rodape">
+        <p>Desenvolvido por Mirraely</p>
+        <p>2023</p>
+    </footer>
 </body>
 
 </html>
