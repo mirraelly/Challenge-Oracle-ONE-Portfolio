@@ -34,7 +34,15 @@ a:hover {
     font-weight: 600;
 }
 
-figure {
+input,
+select,
+textarea {
+    box-sizing: border-box;
+}
+
+figure,
+fieldset, 
+.rodape p {
     margin: 0;
     padding: 0;
 }
@@ -548,38 +556,84 @@ section h3 {
 
 /* Contato */
 
+.form-contato-contato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.5rem;
+}
+
 .form-contato-img {
     border-radius: 10px;
+    box-shadow: 4px 4px 3px 1px #e3cae4;
 }
 
-.form-contato-texto h3 {
-    margin: 0;
+.form-contato-texto {
+    margin-top: 0;
 }
 
-.form-contato-contato,
+.subtext-parte1 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+.subtext-parte2 {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+}
+
+.negrito {
+    font-weight: bold;
+}
+
 .form-contato-form {
     display: flex;
-    gap: 2em;
-}
-
-.form-contato-form {
     flex-direction: column;
+    gap: 1rem;
 }
 
 .form-contato-subtext {
     font-weight: lighter;
+    text-align: justify;
+}
+
+.formas-contato {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#email {
+    flex: 2;
+}
+
+fieldset {
+    border: 0;
+}
+
+fieldset legend {
+    padding-bottom: 0.3rem;
 }
 
 .form-contato-input,
 .form-contato-textarea {
-    border-radius: 4px;
+    border-radius: 8px;
     width: 100%;
     border: none;
     font-size: 1rem;
+    padding-left: 1rem;
+}
+
+.form-contato-textarea {
+    padding-top: 0.5rem;
+    height: 7rem;
+    padding-right: 1rem;
 }
 
 .form-contato-input {
-    height: 53px;
+    height: 2.5rem;
 }
 
 button {
@@ -602,10 +656,6 @@ button:hover {
     border: solid 2px #99009c;
 }
 
-.rodape {
-    text-align: center;
-}
-
 #erroNome {
     display: none;
     font-size: 0.8em;
@@ -613,7 +663,6 @@ button:hover {
 
 input[type="text"],
 input[type="email"],
-textarea,
 fieldset {
     -webkit-appearance: none;
 
@@ -635,6 +684,15 @@ input.invalido {
     border-color: red;
 }
 
+.rodape {
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 3rem 0;
+}
+
+.rodape .copy {
+    margin-bottom: 0.5rem;
+}
 
 
 /*Tablet*/
