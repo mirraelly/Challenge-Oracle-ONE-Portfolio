@@ -580,8 +580,26 @@ section h3 {
 .form-contato-contato {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 3.5rem;
+}
+
+.form-lado-esquerdo {
+    flex: 1;
+}
+
+.form-contato-esquerda {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+}
+
+.form-contato-texto {
+    margin-top: 0;
+    flex: 1;
 }
 
 .form-contato-img {
@@ -589,24 +607,30 @@ section h3 {
     box-shadow: 4px 4px 3px 1px #e3cae4;
 }
 
-.form-contato-texto {
-    margin-top: 0;
-}
-
 .subtext-parte1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-top: 0;
 }
 
 .subtext-parte2 {
-    font-size: 1.2rem;
-    line-height: 1.7rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
     margin-bottom: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 0;
 }
 
 .negrito {
     font-weight: bold;
+}
+
+.giphy-embed {
+    border-radius: 10px;
+    box-shadow: 4px 4px 3px 1px #e3cae4;
+}
+
+.logo-giphy {
+    text-align: center;
+    font-size: 0.8rem;
 }
 
 .form-contato-form {
@@ -622,11 +646,11 @@ section h3 {
 
 .formas-contato {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 1rem;
 }
 
-#email {
+.formas-contato-email {
     flex: 2;
 }
 
@@ -689,7 +713,7 @@ fieldset {
 
 }
 
-input:invalid {
+.form-contato-form.validado *:invalid {
     border: 2px solid red;
 }
 
@@ -703,6 +727,13 @@ input:valid {
 
 input.invalido {
     border-color: red;
+}
+
+.alerta {
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+    padding-top: 0.3rem;
 }
 
 .rodape {
