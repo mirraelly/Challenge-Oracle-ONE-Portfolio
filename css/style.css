@@ -51,13 +51,17 @@ h4 {
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Configurando o tamanho e localização das seções */
 
 .skills-section,
 .academico-section,
 .experiencia {
     background-color: var(--cor-de-fundo); 
-}
+}   
 
 main section {
     min-height: 35rem;
