@@ -14,6 +14,7 @@
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js" defer></script>
 
+    <script src="./js/menu.js" defer></script>
     <script src="./js/formularios.js" defer></script>
     <script src="./js/index-animacao.js" defer></script>
 
@@ -34,7 +35,7 @@
             </a>
             <nav class="menu-nav">
                 <ul>
-                    <li><a href="#Inicial">Home</a></li>
+                    <li><a href="#inicial">Home</a></li>
                     <li><a href="#sobre-mim">Sobre</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#hobbies">Hobbies</a></li>
@@ -45,10 +46,9 @@
             </nav>
         </header>
 
-        <main>
-            <section class="conteiner-inicial" id="inicial">
-
-                <article class="titulo-container inicial" id="#sobremim">
+        <main id="inicial">
+            <section class="conteiner-inicial" >
+                <article class="titulo-container inicial" id="#home">
                     <div>
                         <div class="box-titulo">
                             <h3 class="titulo-bio1 primeiro-titulo">Olá, meu nome é <span class="meu-nome">Mirraely
@@ -179,7 +179,6 @@
                             <li class="kills-nome">React Native</li>
                         </ul>
                     </div>
-
                 </div>
             </section>
 
@@ -226,17 +225,6 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- <div class="Cards para colocar em cada item após animação">
-
-                        Tenho uma paixão por diversas atividades que alimentam minha curiosidade e criatividade. A
-                        leitura de livros me permite explorar mundos e ideias fascinantes, enquanto a música acalma
-                        minha mente e me inspira. Assistir a séries me ensina sobre narrativa e desenvolvimento de
-                        personagens, e a fotografia captura momentos preciosos que enriquecem meu olhar para o mundo.
-                        Além disso, meu interesse em testar receitas reflete meu gosto por desafios e minha capacidade
-                        de experimentar novas abordagens. Esses hobbies demonstram minha busca constante por
-                        conhecimento e minha habilidade de abraçar oportunidades criativas, características que trago
-                        para qualquer desafio profissional.
-                    </div> -->
                     <figure class="imagem-hobbies">
                         <img src="./images/quadrinhos.png" alt="Quadrinhos representando os hobbies"
                             class="img-quadrinhos-hobbies">
@@ -370,7 +358,6 @@
                                             class="experiencia-botao-repositorio">Repositório</button></a>
                                     <a href="https://mirraelly.github.io/hackathon-nasa/" target="_blank"><button
                                             class="experiencia-botao-demo">Ver demo</button></a>
-
                                 </li>
                             </ul>
                         </figcaption>
@@ -505,7 +492,6 @@
                                 <div class="alerta mensagem-erro" aria-hidden="true" role="alert" id="erroEmail">
                                     * Por favor, digite o seu nome e sobrenome (mínimo de 8 caracteres).</div>
                             </div>
-
                             <div>
                                 <label>Qual o assunto do seu contato?</label>
                                 <select class="form-contato-input qual-contato">
@@ -516,7 +502,6 @@
                                     <option>Outro assunto</option>
                                 </select>
                             </div>
-
                             <div>
                                 <fieldset>
                                     <legend>Qual a sua preferência de contato?</legend>
@@ -529,7 +514,6 @@
                                         <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"
                                             required>
                                         <label for="radio-whatsapp"> WhatsApp</label>
-
                                     </div>
                                 </fieldset>
                                 <div class="alerta mensagem-erro" aria-hidden="true" role="alert" id="erroEmail">*
@@ -569,12 +553,12 @@
                 </section>
             </section>
         </main>
+
         <footer class="rodape">
             <p class="copy">&#169; Desenvolvido por Mirraely</p>
             <p>2023</p>
         </footer>
+
     </div>
-
 </body>
-
 </html>
