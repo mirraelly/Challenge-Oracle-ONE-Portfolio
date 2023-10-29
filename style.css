@@ -650,16 +650,23 @@ section h3 {
     gap: 1rem;
 }
 
+.qual-contato {
+    margin: 0.5rem 0;
+}
+
 .formas-contato-email {
     flex: 2;
 }
 
 fieldset {
     border: 0;
+    border-radius: 10px;
+    padding: 0.1rem 0.1rem 0.5rem 0;
+    margin-bottom: 0.1rem;
 }
 
 fieldset legend {
-    padding-bottom: 0.3rem;
+    padding-bottom: 0.5rem;
 }
 
 .form-contato-input,
@@ -715,6 +722,14 @@ fieldset {
 
 .form-contato-form.validado *:invalid {
     border: 2px solid red;
+}
+
+.form-contato-form.validado *:invalid ~ .mensagem-erro {
+    display: block;
+}
+
+.mensagem-erro {
+    display: none;
 }
 
 input:valid {

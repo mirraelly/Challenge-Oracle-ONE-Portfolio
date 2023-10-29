@@ -479,24 +479,26 @@
 
             <section class="form-contato-section" id="contato">
                 <h3 class="form-contato-title">Fale Comigo!</h3>
-    
+
                 <section class="form-contato-contato">
                     <div class="form-lado-esquerdo">
-                        <div>    
+                        <div>
                             <p class="form-contato-subtext subtext-parte2">
                                 <span class="negrito subtext-parte1">Quer me contratar?</span>
                                 Tem alguma sugestão ou dúvida,
                                 você pode entrar em contato comigo diretamente
-                                pelas redes ou preencher o formulário ao lado, e retornarei o rápido possível.</p>
+                                pelas redes ou preencher o formulário ao lado, e retornarei o rápido possível.
+                            </p>
                         </div>
                         <div class="form-contato-esquerda">
-                            <!-- <img class="form-contato-img" src="./images/contato.png"> -->
                             <div style="width:100%;height:0;padding-bottom:80%;position:relative;"><iframe
                                     src="https://giphy.com/embed/6PtBZqT8earZ3XBTTL" width="100%" height="100%"
                                     style="position:absolute" frameBorder="0" class="giphy-embed"
                                     allowFullScreen></iframe></div>
-                            <p><a class="logo-giphy" href="https://giphy.com/gifs/CreuCat-happy-cartoon-creucat-6PtBZqT8earZ3XBTTL" target="_blank">
-                                via GIPHY</a></p>
+                            <p><a class="logo-giphy"
+                                    href="https://giphy.com/gifs/CreuCat-happy-cartoon-creucat-6PtBZqT8earZ3XBTTL"
+                                    target="_blank">
+                                    via GIPHY</a></p>
                         </div>
                     </div>
                     <div class="form-contato-texto">
@@ -504,47 +506,54 @@
                             <div>
                                 <input class="form-contato-input input" type="text" id="nome"
                                     placeholder="Seu nome e sobrenome" minlength="8" maxlength="50" required>
-                                <div class="alerta" aria-hidden="true" role="alert" id="erroEmail">
+                                <div class="alerta mensagem-erro" aria-hidden="true" role="alert" id="erroEmail">
                                     * Por favor, digite o seu nome e sobrenome (mínimo de 8 caracteres).</div>
                             </div>
 
-                            <fieldset>
-                                <legend>Qual o assunto do seu contato?</legend>
-                                <select class="form-contato-input">
+                            <div>
+                                <label>Qual o assunto do seu contato?</label>
+                                <select class="form-contato-input qual-contato">
                                     <option>Quero te contratar!</option>
                                     <option>Desejo uma informação</option>
                                     <option>Tenho uma dúvida</option>
                                     <option>Tenho uma sugestão</option>
                                     <option>Outro assunto</option>
                                 </select>
-                            </fieldset>
+                            </div>
 
-                            <fieldset>
-                                <legend>Qual a sua preferência de contato?</legend>
-                                <div>
-                                    <label for="radio-email"><input type="radio" name="contato" value="email"
-                                            id="radio-email" required> Email</label>
-                                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone"
-                                            id="radio-telefone" required> Telefone</label>
-                                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp"
-                                            id="radio-whatsapp" required> WhatsApp</label>
-                                </div>
-                                <div class="alerta" aria-hidden="true" role="alert" id="erroEmail">* Por favor, escolha
+                            <div>
+                                <fieldset>
+                                    <legend>Qual a sua preferência de contato?</legend>
+                                    <div>
+                                        <input type="radio" name="contato" value="email" id="radio-email" required>
+                                        <label for="radio-email"> Email</label>
+                                        <input type="radio" name="contato" value="telefone" id="radio-telefone"
+                                            required>
+                                        <label for="radio-telefone"> Telefone</label>
+                                        <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"
+                                            required>
+                                        <label for="radio-whatsapp"> WhatsApp</label>
+
+                                    </div>
+                                </fieldset>
+                                <div class="alerta mensagem-erro" aria-hidden="true" role="alert" id="erroEmail">*
+                                    Por favor, escolha
                                     uma das opções de contato.
                                 </div>
-                            </fieldset>
+                            </div>
                             <div class="formas-contato">
                                 <div class="formas-contato-email">
                                     <input class="form-contato-input input" type="email" id="email"
                                         placeholder="Seu email">
-                                    <div class="alerta" aria-hidden="true" role="alert" id="erroEmail">* Digite um
+                                    <div class="alerta mensagem-erro" aria-hidden="true" role="alert" id="erroEmail">*
+                                        Digite um
                                         e-mail válido!</div>
                                 </div>
                                 <div>
                                     <input type="tel" id="telefone" class="form-contato-input input"
-                                        placeholder="Seu telefone">
-                                    <div class="alerta" aria-hidden="true" role="alert" id="erroEmail">
-                                        * Digite apenas números (DDD + o número).
+                                        placeholder="Seu telefone" minlength="14" maxlength="15">
+                                    <div class="alerta mensagem-erro" aria-hidden="true" role="alert" id="erroTelefone">
+                                        * Digite apenas números (DDD + número).
                                     </div>
                                 </div>
                             </div>
@@ -553,8 +562,8 @@
                                     name="mensagem" placeholder="Digite aqui sua mensagem..." maxlength="500"
                                     required></textarea>
 
-                                <div class="alerta" aria-hidden="true" role="alert" id="erroMens">* Por favor, detalhe
-                                    o motivo do seu contato.</div>
+                                <div class="alerta mensagem-erro" aria-hidden="true" role="alert" id="erroMens">
+                                    * Por favor, detalhe o motivo do seu contato.</div>
                             </div>
                             <div>
                                 <button class="form-contato-botao" type="submit">Enviar mensagem</button>
