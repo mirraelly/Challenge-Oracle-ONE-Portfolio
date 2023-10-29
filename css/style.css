@@ -64,15 +64,12 @@ main .inicial {
 }
 
 main .skills-section,
+.academico-section,
+.sobre-mim-container,
+.experiencia,
+.form-contato-section,
 .hobbies {
     padding: 3rem 5rem;
-}
-
-main .sobre-mim-container,
-.academico-section,
-.experiencia,
-.form-contato-section {
-    padding: 80px;
 }
 
 body header,
