@@ -402,9 +402,9 @@ section h3 {
     height: 2em;
 }
 
-#typescript {
-    height: 28px;
-    width: 28px;
+.lab,
+[class^=devicon-], [class*=" devicon-"] {
+    color: rgb(153, 0, 156);
 }
 
 /* Hobbies  */
