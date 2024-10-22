@@ -784,34 +784,103 @@ input.invalido {
     align-items: start;
     font-size: 14px;
   }
-
-  main .inicial {
-    flex-direction: column;
-    align-items: center;
-    width: 80%;
-    gap: 3rem;
-  }
-
-  .foto-perfil {
-    width: 20em;
-    height: 20em;
-    border-radius: 50%;
-  }
-
-  /* Sobre  */
-
-  /* .conteiner-inicial {
-    display: grid;
-}
-
-.conteiner-inicial > * {
-    grid-area: 1 / 1/ -1 / -1;
-} */
 }
 
 /*Mobile*/
 @media (max-width: 780px) {
+  main .skills-section,
+  .academico-section,
+  .sobre-mim-container,
+  .experiencia,
+  .form-contato-section,
+  .hobbies {
+    padding: 2rem 1.5rem;
+  }
+
+  main section {
+    min-height: 100%;
+    height: unset;
+  }
+
   main .inicial {
     gap: 1rem;
+    padding-top: 8em;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    gap: 0;
+  }
+
+  .titulo-bio1 {
+    font-size: 1.8rem;
+  }
+
+  .meu-nome {
+    font-size: 2rem;
+  }
+
+  .titulo-bio2 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  .segundo-titulo {
+    height: 2em;
+  }
+
+  .titulo-network {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  main .inicial .foto-perfil {
+    max-width: 15em;
+    max-height: 15em;
+    border-radius: 50%;
+  }
+
+  .conteiner-inicial .titulo-container {
+    flex-direction: column-reverse;
+  }
+
+  .sobre-mim {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .sobre-mim .conteiner-estrelas {
+    display: none;
+  }
+
+  .skills-section .skills-linha {
+    gap: 0.8rem;
+    justify-content: center;
+  }
+
+  .hobbies .hobbies-box {
+    flex-direction: column-reverse;
+    gap: 0.8em;
+    justify-content: center;
+  }
+
+  .hobbies .hobbies-box .imagem-hobbies {
+    margin: auto;
+  }
+
+  .hobbies .hobbies-box .hobbies-linha {
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .academico-section .academico-cursos {
+    justify-content: center;
+  }
+
+  .experiencia .experiencia-conteiner {
+    justify-content: center;
+  }
+
+  .form-contato-section .form-contato-contato {
+    flex-direction: column;
   }
 }
