@@ -1,0 +1,72 @@
+[
+    {
+        "title": "Html5",
+        "class": "devicon-html5-plain la-3x",     
+        "text": "Estrutura páginas web com elementos semânticos e suporte para mídias avançadas.",
+        "description": "Dê uma olhada em um dos projetos que desenvolvi com essa tecnologia! Clique aqui para ver mais detalhes",
+        "link":""
+    },
+    {
+        "title": "CSS3",
+        "class": "devicon-css3-plain la-3x",
+        "text": "Aplica estilos visuais e layouts responsivos, permitindo incluir animações e efeitos visuais.",
+        "description": "Dê uma olhada em um dos projetos que desenvolvi com essa tecnologia! Clique aqui para ver mais detalhes",
+        "link:"
+    },
+    {
+        "title": "JavaScript (JS)",
+        "class": "devicon-javascript-plain la-3x",
+        "text": "Adiciona comportamento dinâmico e interatividade a sites e aplicativos.",
+        "description": "Dê uma olhada em um dos projetos que desenvolvi com essa tecnologia! Clique aqui para ver mais detalhes",
+        "link":""
+    },
+    {
+        "title": "React",
+        "class": "devicon-react-original la-3x",
+        "text": "Cria interfaces de usuário eficientes e reutilizáveis para aplicativos de página única.",
+        "description": "Dê uma olhada em um dos projetos que desenvolvi com essa tecnologia! Clique aqui para ver mais detalhes",
+        "link":""
+    },
+    {
+        "title": "Node.js",
+        "class":"devicon-nodejs-plain la-3x" ,
+        "text": "Permite usar JavaScript no lado do servidor para construir aplicativos web rápidos e escaláveis.",
+        "description": "Dê uma olhada em um dos projetos que desenvolvi com essa tecnologia! Clique aqui para ver mais detalhes",
+        "link":""
+    },
+    {
+        "title": "TypeScript",
+        "class": "devicon-typescript-plain la-3x",
+        "text": "Permite adicionar tipagem estática ao JavaScript e encontrar erros antes da execução.",
+        "description": "Dê uma olhada em um dos projetos que desenvolvi com essa tecnologia! Clique aqui para ver mais detalhes",
+        "link":
+    },
+    {
+        "title": "Python",
+        "class": "devicon-python-plain la-3x",      
+        "text": "É uma linguagem de programação muito versátil, podendo ser utilizada com diversas finalidades: desenvolvimento web, análise de dados e automação.",
+        "description": "Dê uma olhada em um dos projetos que desenvolvi com essa tecnologia! Clique aqui para ver mais detalhes",
+        "link": ""
+    },
+    {
+        "title": "PostgreSQL",
+        "class": "devicon-postgresql-plain la-3x",
+        "text": "É um banco de dados relacional que gerencia dados complexos com suporte avançado a SQL.",
+        "description": "Dê uma olhada em um dos projetos que desenvolvi com essa tecnologia! Clique aqui para ver mais detalhes",
+        "link":""
+    },
+    {
+        "title": "Bootstrap",
+        "class": "devicon-bootstrap-plain la-3x",
+        "text": "Framework que facilita a criação de sites responsivos e esteticamente agradáveis.",
+        "description": "Dê uma olhada em um dos projetos que desenvolvi com essa tecnologia! Clique aqui para ver mais detalhes",
+        "link": ""
+    },
+    {
+        "title": "React Native",
+        "class": "devicon-react-original la-3x",
+        "text": "Desenvolve aplicativos móveis nativos para iOS e Android usando JavaScript e React.",
+        "description": "Dê uma olhada em um dos projetos que desenvolvi com essa tecnologia! Clique aqui para ver mais detalhes",
+        "link": ""
+    }
+]
