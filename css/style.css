@@ -878,14 +878,22 @@ h3  {
     justify-content: center;
   }
 
+
   .hobbies .hobbies-box {
     flex-direction: column-reverse;
-    gap: 0.8em;
+    gap: 1.5em;
     justify-content: center;
+  }
+
+  .hobbies-conteiner ul,
+  .skills-conteiner ul {
+    width: 12rem;
   }
 
   .hobbies .hobbies-box .imagem-hobbies {
     margin: auto;
+    padding: 2rem;
+    width: 25rem;
   }
 
   .hobbies .hobbies-box .hobbies-linha {
@@ -899,6 +907,17 @@ h3  {
 
   .experiencia .experiencia-conteiner {
     justify-content: center;
+  }
+
+  .experiencia .experiencia-conteiner .imagem-demo {
+    height: 31rem;
+    width: 28.5rem;
+
+  }
+
+  .experiencia .experiencia-conteiner .imagem-demo .experiencia-img {
+    width: 29.2rem;
+    height: 16rem;
   }
 
   .form-contato-section .form-contato-contato {
