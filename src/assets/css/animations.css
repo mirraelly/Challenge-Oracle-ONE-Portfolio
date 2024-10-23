@@ -1,0 +1,85 @@
+/* Main photo animation */
+.foto-perfil {
+  width: 20em;
+  height: 20em;
+  border-radius: 50%;
+  border: 1.25rem;
+  box-shadow: 1px 6px 15px 4px var(--lavender);
+  animation: animafoto 10s infinite;
+}
+
+@keyframes animafoto {
+  0%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+  }
+
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Animation stars */
+.estrela-a::after,
+.estrela-a::before,
+.estrela-b::after,
+.estrela-b::before {
+  content: "⯌";
+  color: transparente;
+  position: absolute;
+  opacity: 0.7;
+}
+
+.estrela-a::after {
+  width: 0.3rem;
+  height: 0.3rem;
+  animation: anim-stars 20s linear infinite;
+  text-shadow: 15px 150px #99009c, 15px 300px #99009c, 20px 450px #99009c,
+    30px 230px #99009c, 40px 380px #99009c, 2px 530px #99009c,
+    150px 300px #99009c, 110px 180px #99009c, 200px 250px #99009c,
+    230px 180px #99009c, 245px 450px #99009c, 125px 480px #99009c,
+    250px 350px #99009c, 150px 380px #99009c, 190px 530px #99009c;
+}
+
+.estrela-a::before {
+  font-size: 0.625rem;
+  animation: anim-stars 10s linear infinite;
+  text-shadow: 50px 200px #99009c, 100px 350px #99009c, 150px 480px #99009c,
+    270px 280px #99009c, 40px 280px #99009c, 180px 370px #99009c,
+    90px 310px #99009c, 175px 340px #99009c;
+}
+
+.estrela-b::after {
+  font-size: 0.8125rem;
+  animation: anim-stars 10s linear infinite;
+  text-shadow: 45px 170px #99009c, 75px 340px #99009c, 125px 460px #99009c,
+    320px 250px #99009c, 28px 310px #99009c, 182px 385px #99009c,
+    90px 352px #99009c, 148px 310px #99009c;
+}
+
+.estrela-b::before {
+  font-size: 0.8125rem;
+  animation: anim-stars 10s linear infinite;
+  text-shadow: 68px 170px #99009c, 138px 170px #99009c, 90px 250px #99009c,
+    100px 320px #99009c, 150px 345px #99009c, 182px 102px #99009c,
+    208px 208px #99009c, 108px 107px #99009c;
+}
+
+@keyframes anim-stars {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-80px);
+  }
+
+  100% {
+    transform: translateY(80px);
+  }
+}

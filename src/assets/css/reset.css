@@ -1,0 +1,27 @@
+ol,
+ul,
+li,
+figure,
+fieldset,
+.rodape p,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+body,
+input,
+select,
+textarea {
+  box-sizing: border-box;
+}
+
+h4 {
+  margin: 0;
+}
