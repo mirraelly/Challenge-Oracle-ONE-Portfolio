@@ -867,6 +867,7 @@ h3  {
   .sobre-mim {
     padding-right: 0;
     padding-left: 0;
+    padding: 0 1.5rem;
   }
 
   .sobre-mim .conteiner-estrelas {
@@ -920,8 +921,15 @@ h3  {
     height: 16rem;
   }
 
+  .form-contato-section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
   .form-contato-section .form-contato-contato {
     flex-direction: column;
+    align-items: unset;
+    gap: 1.5em;
   }
 
 }
