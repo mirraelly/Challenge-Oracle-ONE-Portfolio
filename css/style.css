@@ -464,7 +464,7 @@ section.experiencia {
 }
 
 .experiencia-section-titulo {
-  display: flex;
+  display: block;
 }
 
 .experiencia-titulo {
@@ -778,16 +778,25 @@ input.invalido {
 }
 
 /*Tablet*/
-@media screen and (max-width: 780px) {
+@media (max-width: 780px) {
   header .menu-nav {
     flex-direction: column;
     align-items: start;
     font-size: 14px;
   }
-}
 
-/*Mobile*/
-@media (max-width: 780px) {
+  header .campo-logo img {
+    padding-left: 0;
+  }
+
+  header h1 {
+    display: none;
+  }
+
+  header nav ul li a {
+    font-size: 16px;
+  }
+
   main .skills-section,
   .academico-section,
   .sobre-mim-container,
@@ -829,8 +838,16 @@ input.invalido {
   }
 
   .titulo-network {
-    flex-direction: column;
     gap: 1em;
+    font-size: 16px;
+  }
+
+  .network {
+    font-size: 20px;
+  }
+
+  .titulo-network  .network a {
+    font-size: 16px;
   }
 
   main .inicial .foto-perfil {
@@ -842,6 +859,10 @@ input.invalido {
   .conteiner-inicial .titulo-container {
     flex-direction: column-reverse;
   }
+
+h3  {
+  text-align: center;
+}
 
   .sobre-mim {
     padding-right: 0;
