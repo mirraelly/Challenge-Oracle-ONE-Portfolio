@@ -177,6 +177,8 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
+    position: sticky; 
+    z-index: 20;
   }
 
   .icone-menu {
@@ -204,7 +206,11 @@
   }
 
   .menu-nav {
-    padding: 0 1.875em;
+    padding: 0 3rem;
+  }
+
+  .menu-nav ul {
+    align-items: start;
   }
 
   .academico-cursos-conteiner ul {
@@ -235,17 +241,17 @@
     padding-right: 1rem;
   }
 
-  .mostrar-menu {
+  nav.menu-nav .container-responsive-menu .mostrar-menu {
     max-height: 25rem;
     margin-bottom: 1.25rem;
     margin-top: 0.625rem;
   }
 
-  .menu-nav ul {
+  .container-responsive-menu {
     align-items:start; 
     flex-direction: column;
     top: 4.3rem;
-    right: 21.625rem;
+    left: 4rem;
     transition: max-height 1s, margin-bottom 0.5s, margin-top 1s;
     gap: 1.25em;
     overflow: hidden;
@@ -258,7 +264,6 @@
     margin-bottom: 20px;
     display: none;
     /* max-height: 0; */
-  
     overflow: hidden;
     margin-bottom: 0;
   }
