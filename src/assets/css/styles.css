@@ -109,6 +109,12 @@ header {
   transition: padding 1s;
 }
 
+.container-responsive-menu {
+  display: none;
+  position: absolute;
+  right: 1.625rem;
+}
+
 header img {
   padding-left: 2.5rem;
   width: 2.5em;
@@ -119,12 +125,21 @@ header nav ul {
   padding-right: 2.8rem;
 }
 
-header,
+.header,
+header .menu-nav,
 header section,
 .menu-nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.container-noresponsive-menu {
+  display: flex;
+}
+
+.icone-menu {
+  display: none;
 }
 
 header section,

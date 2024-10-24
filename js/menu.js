@@ -1,6 +1,8 @@
 const header = document.querySelector('header');
+const opcoesMenu = document.querySelector('.menu-nav ul');
 const links = document.querySelectorAll('.menu-nav ul li a');
 const sections = document.querySelectorAll("main > section");
+const iconeMenu = document.querySelector('.icone-menu');
 
 atualizarMenu();
 
@@ -43,6 +45,31 @@ function atualizarMenu() {
     });
 }
 
-window.addEventListener('hashchange', (event) => {
+window.addEventListener('hashchange', () => {
     atualizarMenu();
 });
+
+
+// Responsive menu
+iconeMenu.addEventListener('click', () => {
+    const visible = menuVisivel(opcoesMenu);
+
+    if (visible == true) {
+        esconderMenu(opcoesMenu);
+    } else {
+        mostrarMenu(opcoesMenu);
+    }
+});
+
+function esconderMenu(menu) {
+    menu.classList.add('mostrar-menu');
+}
+
+function mostrarMenu(menu) {
+    menu.classList.remove('mostrar-menu');
+}
+
+function menuVisivel(menu) {
+    return !menu.classList.contains('mostrar-menu');
+}
+

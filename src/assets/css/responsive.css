@@ -29,13 +29,13 @@
 /*Tablet*/
 @media (max-width: 850px) {
   header .menu-nav {
-    flex-direction: column;
-    align-items: start;
+    align-items: center;
     font-size: 0.875rem;
   }
 
   header .campo-logo img {
     padding-left: 0;
+    padding-right: 0;
   }
 
   header h1 {
@@ -172,6 +172,18 @@
 }
 
 @media (max-width: 576px) {
+  body header {
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+
+  .icone-menu {
+    display: inline;
+    padding: 1rem 2.5rem;
+  }
+
   .card-container ul {
     width: unset;
     width: 5em;
@@ -191,8 +203,12 @@
     object-fit: fill;
   }
 
+  .menu-nav {
+    padding: 0 1.875em;
+  }
+
   .academico-cursos-conteiner ul {
-    width: 8rem;
+    min-width: 8rem;
     height: 12em;
   }
 
@@ -219,4 +235,39 @@
     padding-right: 1rem;
   }
 
+  .mostrar-menu {
+    max-height: 25rem;
+    margin-bottom: 1.25rem;
+    margin-top: 0.625rem;
+  }
+
+  .menu-nav ul {
+    align-items:start; 
+    flex-direction: column;
+    top: 4.3rem;
+    right: 21.625rem;
+    transition: max-height 1s, margin-bottom 0.5s, margin-top 1s;
+    gap: 1.25em;
+    overflow: hidden;
+  }
+
+  .mostrar-menu li {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    margin-bottom: 20px;
+    display: none;
+    /* max-height: 0; */
+  
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+
+  .rodape {
+    padding: 1rem 0;
+  }
+
+  .rodape p {
+    font-size: 0.875em;
+  }
 }
