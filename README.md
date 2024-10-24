@@ -1,7 +1,6 @@
 # Challenge Oracle + ONE - Meu Portfólio
 
-O **Portfóio** foi um desafio proposto Sprint 1, para os alunos da 3ª fase do Programa ONE (parceria entre Alura & Oracle )
-Trata-se de uma página desenvolvida em HTML, CSS e JavaScript, com as listagens de informações e evidências profissionais de forma a divulgar o trabalho do programador.
+O **Portfóio** foi um desafio proposto Sprint 1, para os alunos da 3ª fase do Programa ONE (parceria entre Alura & Oracle). Trata-se de uma página desenvolvida em HTML, CSS e JavaScript, com as listagens de informações e evidências profissionais de forma a divulgar o trabalho do programador. Há um modelo do Figma como base, mas o desenvolvedor poderá usar a criatividade para realizar as adaptações necessárias para tornar o seu portfólio mais atratativo. 
 
 ## Tecnologias utilizadas
 
@@ -20,26 +19,16 @@ Trata-se de uma página desenvolvida em HTML, CSS e JavaScript, com as listagens
 
 ## Requisitos solicitados:
 
-#### Menu com:
-* Imagem que servirá de banner;
-* Uma seção "sobre mim":
-* Uma foto de perfil;
+* Menu com imagem;
+* Seção "Sobre mim":
+* Foto de perfil;
 * Um link para as suas redes sociais;
-* Outros dados pessoais.
-
-#### Seção de Hobbies e Soft Skills;
-
-#### Uma seção de formações e cursos;
-
-#### Uma  seção de experiência em programação;
-
-#### Um formulário de contato com os campos para:
-* Email;
-* Nome;
-* Assunto;
-* Mensagem.
-
-#### Um rodapé com as informações da pessoa que desenvolveu o portfólio; 
+* Outros dados pessoais;
+* Seção de Hobbies e Soft Skills;
+* Uma seção de formações e cursos;
+* Uma  seção de experiência em programação;
+* Um formulário de contato;
+* Um rodapé com as informações da pessoa que desenvolveu o portfólio.
 
 ## Agrdecimentos: 
 

@@ -4,7 +4,9 @@ li,
 figure,
 fieldset,
 .rodape p,
-body {
+body,
+.experiencia-conteiner,
+.form-contato-contato {
   margin: 0;
   padding: 0;
 }
